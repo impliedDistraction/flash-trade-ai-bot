@@ -1,0 +1,20 @@
+{
+  "name": "flash-trade-ai-bot",
+  "version": "1.0.0",
+  "description": "A DLMM order maker based on strategies and mathematics for the Flash.Trade exchange on the Solana blockchain",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
