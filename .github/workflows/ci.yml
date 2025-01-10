@@ -10,9 +10,25 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # Step 1: Check out the repository
       - uses: actions/checkout@v3
+
+      # Step 2: Set up Node.js
       - uses: actions/setup-node@v3
         with:
           node-version: '18'
-      - run: npm install
-      - run: npm test
+          cache: 'pnpm' # Enable pnpm caching
+
+      # Step 3: Install pnpm
+      - run: npm install -g pnpm
+
+      # Step 4: Install dependencies using pnpm
+      - run: pnpm install
+
+      # Step 5: Run tests
+      - run: pnpm test      
+      
+      # Step 6: Validate lockfile
+      - name: Validate pnpm-lock.yaml
+        run: pnpm install --frozen-lockfile
+
