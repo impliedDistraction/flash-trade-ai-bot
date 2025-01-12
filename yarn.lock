@@ -696,7 +696,7 @@
     "@coral-xyz/borsh" "^0.28.0"
     buffer "^6.0.1"
 
-"@pythnetwork/price-service-client@^1.8.2":
+"@pythnetwork/price-service-client@^1.8.2", "@pythnetwork/price-service-client@^1.9.0":
   version "1.9.0"
   resolved "https://registry.npmjs.org/@pythnetwork/price-service-client/-/price-service-client-1.9.0.tgz"
   integrity sha512-SLm3IFcfmy9iMqHeT4Ih6qMNZhJEefY14T9yTlpsH2D/FE5+BaGGnfcexUifVlfH6M7mwRC4hEFdNvZ6ebZjJg==

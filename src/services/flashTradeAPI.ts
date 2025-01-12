@@ -37,20 +37,6 @@ const flashClient = new PerpetualsClient(
 );
 
 /**
- * Fetch market data from Flash.Trade API.
- * @returns {Promise<any>} The market data response.
- */
-export const fetchMarketData = async (): Promise<any> => {
-  try {
-    const response = await axios.get(`${API_BASE_URL}/market-data`);
-    return response.data;
-  } catch (error) {
-    console.error('Error fetching market data:', error);
-    throw new Error('Failed to fetch market data');
-  }
-};
-
-/**
  * Place an order on the Flash.Trade platform.
  * @param {string} market - The market identifier (e.g., "BTC/USDT").
  * @param {string} side - Order side ("buy" or "sell").
